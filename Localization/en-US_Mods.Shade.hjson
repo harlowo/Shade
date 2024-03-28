@@ -1,0 +1,190 @@
+Items: {
+	OnyxOre: {
+		Tooltip: Tougher than luminite ore, suprisingly
+		DisplayName: Onyx Ore
+	}
+
+	OnyxBar: {
+		Tooltip: ""
+		DisplayName: Onyx Bar
+	}
+
+	OnyxCore: {
+		Tooltip: ""
+		DisplayName: Onyx Core
+	}
+
+	OnyxDrill: {
+		DisplayName: Onyx Drill
+		Tooltip: If there's a drill, there's a way!
+	}
+
+	OnyxChestPlate: {
+		DisplayName: Onyx Chest Plate
+		Tooltip:
+			'''
+
+			20 extra health, increased damage
+			'''
+	}
+
+	OnyxHelmet: {
+		SetBonus: Overall increased damage
+		DisplayName: Onyx Helmet
+		Tooltip:
+			'''
+
+			Increases damage by 20%
+			'''
+	}
+
+	OnyxLeggings: {
+		DisplayName: Onyx Leggings
+		Tooltip:
+			'''
+
+			Increases Movement speed
+			'''
+	}
+
+	OnyxFang: {
+		DisplayName: Onyx Fang
+		Tooltip: Slice and Dice!
+	}
+
+	OnyxEnigmaStaff: {
+		DisplayName: Onyx Enigma Staff
+		Tooltip: Out of Sight!
+	}
+
+	OnyxFragment: {
+		Tooltip: ""
+		DisplayName: Onyx Fragment
+	}
+
+	OnyxBlasterMK2: {
+		Tooltip: unused item
+		DisplayName: Onyx Blaster MK2
+	}
+
+	OnyxRailgun: {
+		DisplayName: Onyx Railgun
+		Tooltip: The Beam is Supreme!
+	}
+
+	OnyxExcavatorSummon: {
+		Tooltip: Summons the Onyx Excavator, Must be used underground
+		DisplayName: Onyx Transmitter
+	}
+
+	ExcavatorLootBox: {
+		DisplayName: Onyx Capsule
+		Tooltip: Right click to open
+	}
+
+	OnyxLifeModule: {
+		DisplayName: Onyx Life Module
+		Tooltip: Increses life by 100, can only be used once.
+	}
+
+	OnyxMusicBox: {
+		DisplayName: Onyx Music Box
+		Tooltip: ""
+	}
+
+	OnyxWire: {
+		DisplayName: Onyx Wire
+		Tooltip: ""
+	}
+
+	Constellation: {
+		Tooltip: ""
+		DisplayName: Constellation
+	}
+
+	ShadeGreaves: {
+		Tooltip: ""
+		DisplayName: Shade Greaves
+	}
+
+	ShadePlate: {
+		DisplayName: Shade Plate
+		Tooltip: ""
+	}
+
+	ShadeMask: {
+		DisplayName: Shade Mask
+		Tooltip: ""
+	}
+
+	SawbladeLauncher: {
+		Tooltip: ""
+		DisplayName: Sawblade Launcher
+	}
+
+	OnyxChronicle: {
+		DisplayName: Onyx Chronicle
+		Tooltip: ""
+	}
+
+	OnyxExcavatorRelic: {
+		DisplayName: Onyx Excavator Relic
+		Tooltip: ""
+	}
+
+	OnyxExcavatorTrophy: {
+		DisplayName: Onyx Excavator Trophy
+		Tooltip: ""
+	}
+}
+
+WorldGen.OnyxOrePassMessage: Mods.Shade.WorldGen.OnyxOrePassMessage
+
+Tiles: {
+	OnyxOreTile.MapEntry: Onyx Ore
+	OnyxOre.MapEntry: Onyx Ore
+	OnyxMusicBoxTile.MapEntry: Onyx Music Box Tile
+}
+
+Projectiles: {
+	OnyxDrillProjectile.DisplayName: Onyx Drill
+	OnyxFangProjectile.DisplayName: Onyx Fang
+	EnigmaProj.DisplayName: Enigma Proj
+	Fang2.DisplayName: Fang2
+	RailGunShot.DisplayName: Rail Gun Shot
+	OnyxExcavatorLightningBolt.DisplayName: Onyx Bolt
+	OnyxExcavatorMissile.DisplayName: Onyx Missile
+	OnyxBolt.DisplayName: Onyx Bolt
+	OnyxWireWhip.DisplayName: Onyx Wire Whip
+	ConstellationWhip.DisplayName: Constellation Whip
+	ShadeDaggerProj.DisplayName: Shade Dagger Proj
+	Sawblade.DisplayName: Sawblade
+	Magnet.DisplayName: Magnet
+	OrbOfOnyxia.DisplayName: Orb Of Onyxia
+	MiracleRoundProj.DisplayName: Miracle Round Proj
+	OnyxProj.DisplayName: Onyx Proj
+}
+
+NPCs: {
+	OnyxScout.DisplayName: Onyx Scout
+	OnyxScoutBody.DisplayName: Onyx Scout Body
+	OnyxScoutTail.DisplayName: Onyx Scout Tail
+	OnyxScoutHead.DisplayName: Onyx Scout Head
+	OnyxExcavatorBody.DisplayName: Onyx Excavator
+	OnyxExcavatorHead.DisplayName: Onyx Excavator
+	OnyxExcavatorTail.DisplayName: Onyx Excavator
+	OnyxExcavatorFlash.DisplayName: ""
+	OnyxExcavatorLightningSignal.DisplayName: ""
+	OnyxExcavatorMissileSignal.DisplayName: Onyx Excavator Missile Signal
+	OnyxDroid.DisplayName: Onyx Droid
+	OnyxExcavatorDroidSignal.DisplayName: Onyx Excavator Droid Signal
+}
+
+UI.GunCharge: Mods.Shade.UI.GunCharge
+
+Buffs: {
+	ShadeDaggerBuff: {
+		DisplayName: Shade Dagger Buff
+		Description: Mods.Shade.Buffs.ShadeDaggerBuff.Description
+	}
+}
