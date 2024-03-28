@@ -1,0 +1,5 @@
+displayName = Shade Mod
+author =  Blu3, Portal mech and the other members of the shade mod team!
+version = 0.1.4.7
+hideResources = true
+includeSource = false

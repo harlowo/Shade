@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\tModLoader.targets" />
+  <PropertyGroup>
+    <AssemblyName>Shade</AssemblyName>
+    <TargetFramework>net6.0</TargetFramework>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Blocks\OnyxBar.Png" />
+    <None Remove="Blocks\OnyxOre.png" />
+    <None Remove="Blocks\OnyxOreTile.png" />
+    <None Remove="Blocks\Tiles\OnyxBar.png" />
+    <None Remove="Content01\Items\OnyxBlasterMK2.png" />
+    <None Remove="Content01\Items\OnyxChestPlate.png" />
+    <None Remove="Content01\Items\OnyxChestPlate_Body.png" />
+    <None Remove="Content01\Items\OnyxCore.png" />
+    <None Remove="Content01\Items\OnyxDrill.png" />
+    <None Remove="Content01\Items\OnyxFang.png" />
+    <None Remove="Content01\Items\OnyxFragment.png" />
+    <None Remove="Content01\Items\OnyxHelmet.png" />
+    <None Remove="Content01\Items\OnyxHelmet_Head.png" />
+    <None Remove="Content01\Items\OnyxLeggings.png" />
+    <None Remove="Content01\Items\OnyxLeggings_Legs.png" />
+    <None Remove="Content01\Items\OnyxRailgun.png" />
+    <None Remove="Content01\Items\OnyxRailgunGlow.png" />
+    <None Remove="Content01\Projectiles\OnyxBolt.png" />
+    <None Remove="Content01\Projectiles\OnyxDrillProjectile.png" />
+    <None Remove="Content01\Npcs\OnyxScoutBody.png" />
+    <None Remove="Content01\Npcs\OnyxScoutHead.png" />
+    <None Remove="Content01\Npcs\OnyxScoutTail.png" />
+    <None Remove="Content01\Npcs\OnyxScout_Bestiary.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="tModLoader.CodeAssist" Version="0.1.*" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Buffs\" />
+    <Folder Include="Common\GlobalItems\" />
+    <Folder Include="Common\Players\" />
+    <Folder Include="Content01\Items\Equipables\" />
+    <Folder Include="Content02\Assets\" />
+    <Folder Include="Content02\Blocks\" />
+    <Folder Include="Content02\Buffs\" />
+    <Folder Include="Content02\Dustz\" />
+    <Folder Include="Content02\Npcs\" />
+  </ItemGroup>
+</Project>
