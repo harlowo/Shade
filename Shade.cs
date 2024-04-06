@@ -4,8 +4,17 @@ namespace Shade
 {
     public class Shade : Mod
     {
-        public static Shade Instance;
-        public Shade() => Instance = this;
+        internal static Shade Instance; //renamed to internal
+        //much better to do it like this
+        public override void Load()
+        {
+            Instance = this;
+        }
+
+        public override void Unload()
+        {
+            Instance = null;
+        }
 
     }
 }
