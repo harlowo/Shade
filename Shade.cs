@@ -1,5 +1,7 @@
+using System.IO;
+using Terraria;
 using Terraria.ModLoader;
-
+using NetEasy;
 namespace Shade
 {
     public class Shade : Mod
@@ -15,6 +17,15 @@ namespace Shade
         {
             Instance = null;
         }
-
+        
+        public override void PostSetupContent()
+        {
+            NetEasy.NetEasy.Register(this);
+        }
+        
+        public override void HandlePacket(BinaryReader reader, int whoAmI)
+        {
+            NetEasy.NetEasy.HandleModule(reader, whoAmI);
+        }
     }
 }
