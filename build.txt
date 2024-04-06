@@ -1,5 +1,6 @@
-displayName = Shade Mod
+displayName = [c/7500b3:Shade Mod]
 author =  Blu3, Portal mech and the other members of the shade mod team!
 version = 0.1.4.7
+dllReferences = NetEasy_v0.1.8, NetSerializer
 hideResources = true
 includeSource = false
