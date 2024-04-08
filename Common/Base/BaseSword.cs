@@ -9,7 +9,7 @@ using static Microsoft.Xna.Framework.MathHelper;
 using System.IO;
 using Terraria;
 using Terraria.ModLoader;
-using Extras.Content.ShadeModStuff.OnyxClaymore; //using Shade.Common.Base;
+using Shade.Common.Base;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria.GameContent;
 using Terraria.ID;
@@ -334,7 +334,7 @@ namespace Shade.Common.Base
     public class SwordEffect : ModProjectile
     {
         //example mod code lmao
-        public override string Texture => "Shade/Assets/VanillaSlashEffect";
+        public override string Texture => "Shade/Common/Textures/VanillaSlashEffect";
         public override void SetStaticDefaults()
         {
             ProjectileID.Sets.AllowsContactDamageFromJellyfish[Type] = true;

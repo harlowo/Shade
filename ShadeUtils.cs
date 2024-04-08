@@ -45,7 +45,7 @@ namespace Shade
         /// <summary>
         /// i dont know what this is but its awesome
         /// </summary>
-        public static readonly int ؠ = 666;
+        //public static readonly int ؠ = 666;
 
         public static readonly Color[] OnyxColors = new Color[]
         {
@@ -57,5 +57,35 @@ namespace Shade
         
         //useful for things that shrink or expand
         public static float SineInOut(float value) => (0f - (MathF.Cos((value * MathF.PI)) - 1f)) / 2f;
+
+        /// <summary>
+        /// Spawns a projectile from above, with diagonal offset relative to xVariance
+        /// </summary>
+        /// <param name="source"></param>
+        /// <param name="targetPos">Whwre to aim towards when spawning</param>
+        /// <param name="xLimit">max horizontal offset</param>
+        /// <param name="xVariance">how random the x offset is</param>
+        /// <param name="yLimitLower">lower vertical limit</param>
+        /// <param name="yLimitUpper">upper vertical limit</param>
+        /// <param name="projSpeed">how fast the projectile should be</param>
+        /// <param name="projType">the projectile to spawn</param>
+        /// <param name="damage"></param>
+        /// <param name="knockback"></param>
+        /// <param name="owner"></param>
+        /// <returns></returns>
+        public static Projectile ProjectileRain(IEntitySource source, Vector2 targetPos, float xLimit, float xVariance, float yLimitLower, float yLimitUpper, float projSpeed, int projType, int damage, float knockback, int owner)
+        {
+            float x = targetPos.X + Main.rand.NextFloat(-xLimit, xLimit);
+            float y = targetPos.Y - Main.rand.NextFloat(yLimitLower, yLimitUpper);
+            Vector2 spawnPosition = new Vector2(x, y);
+            Vector2 velocity = targetPos - spawnPosition;
+            velocity.X += Main.rand.NextFloat(-xVariance, xVariance);
+            float speed = projSpeed;
+            float targetDist = velocity.Length();
+            targetDist = speed / targetDist;
+            velocity.X *= targetDist;
+            velocity.Y *= targetDist;
+            return Projectile.NewProjectileDirect(source, spawnPosition, velocity, projType, damage, knockback, owner);
+        }
     }
 }
