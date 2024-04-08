@@ -334,7 +334,7 @@ namespace Shade.Common.Base
     public class SwordEffect : ModProjectile
     {
         //example mod code lmao
-        public override string Texture => "Shade/Assets/VanillaSlashEffect";
+        public override string Texture => "Shade/Common/Textures/VanillaSlashEffect";
         public override void SetStaticDefaults()
         {
             ProjectileID.Sets.AllowsContactDamageFromJellyfish[Type] = true;
