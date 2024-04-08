@@ -54,5 +54,8 @@ namespace Shade
            //ex: OnyxColors[1] would be the 2nd color, new Color(30, 9, 44).
            new Color(31, 0, 52), new Color(30, 9, 44), new Color(136, 0, 201), new Color(159, 36, 239)
         };
+        
+        //useful for things that shrink or expand
+        public static float SineInOut(float value) => (0f - (MathF.Cos((value * MathF.PI)) - 1f)) / 2f;
     }
 }
