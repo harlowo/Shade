@@ -9,7 +9,7 @@ using static Microsoft.Xna.Framework.MathHelper;
 using System.IO;
 using Terraria;
 using Terraria.ModLoader;
-using Extras.Content.ShadeModStuff.OnyxClaymore; //using Shade.Common.Base;
+using Shade.Common.Base;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria.GameContent;
 using Terraria.ID;
