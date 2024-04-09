@@ -1,7 +1,7 @@
 global using static Terraria.ModLoader.ModContent;
 global using Microsoft.Xna.Framework;
 global using static Microsoft.Xna.Framework.MathHelper;
-global using static ShadeUtils;
+global using static Shade.ShadeUtils;
 using Terraria.ModLoader;
 
 namespace Shade
