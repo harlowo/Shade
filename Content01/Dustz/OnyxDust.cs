@@ -13,8 +13,8 @@ namespace Shade.Content01.Dustz
         }
         public override bool Update(Dust dust)
         {
-            Lighting.AddLight((int)(dust.position.X / 16f), (int)(dust.position.Y / 16f), 0.2f, 0.2f, 0.2f);
-            dust.noGravity = true;
+            Lighting.AddLight((int)(dust.position.X / 16f), (int)(dust.position.Y / 16f), Color.Violet.ToVector3()); //why was it white lol
+            dust.noGravity = true; 
             dust.position += dust.velocity;
             dust.velocity *= 0.92f;
             dust.scale *= 0.98f;
