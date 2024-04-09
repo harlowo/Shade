@@ -174,7 +174,7 @@ namespace Shade.Content02.Items.Weapons.OnyxClaymore
             {
                 for (int i = 0; i < 3; i++)
                 {
-                    Projectile proj = RangerUtils.ProjectileRain(Projectile.InheritSource(Projectile), target.Center, 150, 50, 500, 800, 20f, ProjectileID.BlackBolt, Projectile.damage / 3, 3f, Projectile.owner);
+                    Projectile proj = ProjectileRain(Projectile.InheritSource(Projectile), target.Center, 150, 50, 500, 800, 20f, ProjectileID.BlackBolt, Projectile.damage / 3, 3f, Projectile.owner);
                     proj.timeLeft = (int)(proj.timeLeft * 5f);
                 }
             }
@@ -251,7 +251,7 @@ namespace Shade.Content02.Items.Weapons.OnyxClaymore
             {
                 for (int i = 0; i < 2; i++)
                 {
-                    Projectile proj = RangerUtils.ProjectileRain(Projectile.InheritSource(Projectile), target.Center, 150, 50, 500, 800, 20f, ProjectileID.BlackBolt, Projectile.damage / 3, 3f, Projectile.owner);
+                    Projectile proj = ProjectileRain(Projectile.InheritSource(Projectile), target.Center, 150, 50, 500, 800, 20f, ProjectileID.BlackBolt, Projectile.damage / 3, 3f, Projectile.owner);
                     proj.timeLeft = (int)(proj.timeLeft * 5f);
                 }
             }
