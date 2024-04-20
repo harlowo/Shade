@@ -87,5 +87,13 @@ namespace Shade
             velocity.Y *= targetDist;
             return Projectile.NewProjectileDirect(source, spawnPosition, velocity, projType, damage, knockback, owner);
         }
+
+        
+         public static Vector2 SafeDirectionTo(this Entity entity, Vector2 destination, Vector2? fallback = null)
+         {
+             if (!fallback.HasValue)
+                 fallback = Vector2.Zero;
+             return (destination - entity.Center).SafeNormalize(fallback.Value);
+         }
     }
 }
